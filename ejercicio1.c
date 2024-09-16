@@ -1,11 +1,18 @@
 #include <stdio.h>
 
-int main(){
-    float var = 10 ;
+int main() {
+    float num = 5.5;
     float *ptr;
 
-    ptr = &var;
+    ptr = &num;
 
-    printf("la direccion de la variable es %f, y el valor es %f\n ", ptr, *ptr )
+    
+    printf("Dirección de num: %p\n", (void*)&num);
+    printf("Valor de ptr: %p\n", (void*)ptr);
+    printf("Valor de num a través de ptr: %.2f\n", *ptr);
+    
 
+   printf("el valor del puntero es %p \n y la direccion de la variable de num es %.2f\n ", (void*)ptr , *ptr );
+
+    return 0;
 }
