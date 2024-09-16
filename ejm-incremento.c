@@ -11,6 +11,12 @@ int main(){
 
     printf("valor despues de incremento: %d\n", *ptr);
 
+    *ptr--;
+
+    printf("valor despues de decrementar: %d\n", *ptr);
+
+
+
 
     return 0;
 }
